@@ -1,9 +1,9 @@
-js-model is a library to create watchable objects/models using Proxy and Reflect, written in pure javascript with no dependency. Api is simliary to vuex.
+js-model is a library to create watchable objects/models using Proxy and Reflect, written in pure javascript with no dependency. Api is simliar to vuex.
 
 
 
 ```
-		import jsmodel from './index'
+import jsmodel from 'js-model'
 
 
         let def = {
