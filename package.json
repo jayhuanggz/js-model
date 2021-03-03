@@ -1,6 +1,22 @@
 {
-    "name": "js-model",
-    "description": "A js library to create watchable objects with Proxy and Reflect",
-    "version": "0.1.0",
-    "author": "jayh"
+  "name": "js-reactive-model",
+  "description": "A js library to create watchable objects with Proxy and Reflect",
+  "version": "0.1.0",
+  "author": "javcly",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayhuanggz/js-model.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayhuanggz/js-model/issues"
+  },
+  "homepage": "https://github.com/jayhuanggz/js-model#readme"
 }
