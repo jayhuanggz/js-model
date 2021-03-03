@@ -36,19 +36,20 @@ import jsmodel from 'js-reactive-model'
             }
         }
         let model = jsmodel(def);
-
-        model.watch('name', (oldVal, newVal) => {
+        let watches = [];
+        watches.push(model.watch('name', (oldVal, newVal) => {
             console.log('name changed')
-        });
-        model.watch('skills', (oldVal, newVal) => {
+        }));
+        
+        watches.push(model.watch('skills', (oldVal, newVal) => {
             console.log('skills changed')
-        });
+        }));
 
-        model.watch('company', () => {
+       watches.push( model.watch('company', () => {
             console.log('company changed');
         }, {
             deep: true
-        });
+        }));
 
 
         model.name = 'Kevin'
@@ -56,7 +57,8 @@ import jsmodel from 'js-reactive-model'
         model.skills = [];
         model.company.name = 'Coolzhua Tech'
         
-         
+        watches.forEach(w->w());
+        model.destroy();
 ```
 
 
