@@ -13,7 +13,7 @@ js-model is a library to create watchable objects/models using Proxy and Reflect
 
 
 ```
-import jsmodel from 'js-model'
+import jsmodel from 'js-reactive-model'
 
 
         let def = {
